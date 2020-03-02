@@ -1,0 +1,26 @@
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\DataAccess.deps.json
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\DataAccess.dll
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\DataAccess.pdb
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.AssemblyInfo.cs
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.dll
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.pdb
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\Core.dll
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\Data.dll
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\Data.pdb
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\Core.pdb
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.csproj.CopyComplete
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\DataAccess.deps.json
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\DataAccess.dll
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\DataAccess.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\Core.dll
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\Data.dll
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\Data.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp2.1\Core.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.AssemblyInfo.cs
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.csproj.CopyComplete
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.dll
+C:\Users\PC\Desktop\Bitirme Projesi\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp2.1\DataAccess.pdb

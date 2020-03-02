@@ -1,0 +1,8 @@
+C:\Users\PC\Desktop\ExamSystemAPI\Data\obj\Debug\netcoreapp3.1\Data.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\ExamSystemAPI\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\ExamSystemAPI\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\PC\Desktop\ExamSystemAPI\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\PC\Desktop\ExamSystemAPI\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\PC\Desktop\ExamSystemAPI\Data\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\PC\Desktop\ExamSystemAPI\Data\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\PC\Desktop\ExamSystemAPI\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete

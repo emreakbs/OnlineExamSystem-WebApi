@@ -1,0 +1,8 @@
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.deps.json
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.AssemblyInfo.cs
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\PC\Desktop\ExamSystemAPI\DataAccess\obj\Debug\netcoreapp3.1\DataAccess.pdb

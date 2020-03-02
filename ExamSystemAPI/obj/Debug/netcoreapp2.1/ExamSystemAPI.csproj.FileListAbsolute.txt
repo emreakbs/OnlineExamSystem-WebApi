@@ -1,0 +1,3 @@
+C:\Users\PC\Desktop\ExamSystemAPI\ExamSystemAPI\obj\Debug\netcoreapp2.1\ExamSystemAPI.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\ExamSystemAPI\ExamSystemAPI\obj\Debug\netcoreapp2.1\ExamSystemAPI.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\ExamSystemAPI\ExamSystemAPI\obj\Debug\netcoreapp2.1\ExamSystemAPI.AssemblyInfo.cs
