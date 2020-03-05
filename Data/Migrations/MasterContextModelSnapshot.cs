@@ -37,6 +37,8 @@ namespace Data.Migrations
 
                     b.Property<int>("PositionId");
 
+                    b.Property<short>("Status");
+
                     b.HasKey("Id");
 
                     b.HasIndex("PositionId");
@@ -52,6 +54,8 @@ namespace Data.Migrations
                     b.Property<string>("ClassName");
 
                     b.Property<int>("SchoolId");
+
+                    b.Property<short>("Status");
 
                     b.HasKey("Id");
 
@@ -69,6 +73,8 @@ namespace Data.Migrations
 
                     b.Property<int>("SchoolId");
 
+                    b.Property<short>("Status");
+
                     b.HasKey("Id");
 
                     b.HasIndex("SchoolId");
@@ -84,6 +90,8 @@ namespace Data.Migrations
                     b.Property<DateTime>("ExamCreateTime");
 
                     b.Property<string>("ExamStatus");
+
+                    b.Property<short>("Status");
 
                     b.Property<int>("TeacherId");
 
@@ -104,6 +112,8 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("ExamId");
+
+                    b.Property<short>("Status");
 
                     b.Property<int>("StudentId");
 
@@ -127,6 +137,8 @@ namespace Data.Migrations
                     b.Property<bool>("QuestionAnswerType");
 
                     b.Property<int>("QuestionId");
+
+                    b.Property<short>("Status");
 
                     b.HasKey("Id");
 
@@ -152,6 +164,8 @@ namespace Data.Migrations
                         .IsRequired();
 
                     b.Property<int>("QuestionTypeId");
+
+                    b.Property<short>("Status");
 
                     b.Property<int>("SubjectId");
 
@@ -183,6 +197,8 @@ namespace Data.Migrations
                     b.Property<string>("QuestionTypeText")
                         .IsRequired();
 
+                    b.Property<short>("Status");
+
                     b.HasKey("Id");
 
                     b.ToTable("QuestionTypes");
@@ -194,6 +210,8 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("LessonId");
+
+                    b.Property<short>("Status");
 
                     b.Property<string>("SubjectName")
                         .IsRequired();
@@ -213,6 +231,8 @@ namespace Data.Migrations
                     b.Property<int>("LessonId");
 
                     b.Property<int>("QuestionId");
+
+                    b.Property<short>("Status");
 
                     b.Property<int>("TeacherId");
 
@@ -238,6 +258,8 @@ namespace Data.Migrations
 
                     b.Property<string>("LessonName");
 
+                    b.Property<short>("Status");
+
                     b.HasKey("Id");
 
                     b.ToTable("Lessons");
@@ -249,6 +271,8 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<string>("PositionName");
+
+                    b.Property<short>("Status");
 
                     b.HasKey("Id");
 
@@ -265,6 +289,8 @@ namespace Data.Migrations
 
                     b.Property<string>("SchoolWebSite");
 
+                    b.Property<short>("Status");
+
                     b.HasKey("Id");
 
                     b.ToTable("Schools");
@@ -276,6 +302,8 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("QuestionId");
+
+                    b.Property<short>("Status");
 
                     b.Property<bool>("StudentAnswerStatus");
 
@@ -302,6 +330,8 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd();
 
                     b.Property<int>("ClassId");
+
+                    b.Property<short>("Status");
 
                     b.Property<string>("StudentFirstName")
                         .IsRequired();
@@ -330,6 +360,8 @@ namespace Data.Migrations
 
                     b.Property<string>("BranchName");
 
+                    b.Property<short>("Status");
+
                     b.HasKey("Id");
 
                     b.ToTable("Branchs");
@@ -345,6 +377,8 @@ namespace Data.Migrations
                     b.Property<int>("DepartmentId");
 
                     b.Property<int>("PositionId");
+
+                    b.Property<short>("Status");
 
                     b.Property<string>("TeacherFirstName")
                         .IsRequired();

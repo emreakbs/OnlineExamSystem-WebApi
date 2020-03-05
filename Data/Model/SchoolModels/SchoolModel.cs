@@ -17,6 +17,7 @@ namespace Data.Model.SchoolModels
         /// </summary>
         [Required(ErrorMessage = "Okul adı alanı zorunludur.")]
         public string SchoolName { get; set; }
+
         /// <summary>
         /// Okul web sitesini belirtir.
         /// </summary>

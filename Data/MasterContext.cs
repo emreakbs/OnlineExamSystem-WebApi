@@ -41,12 +41,14 @@ namespace Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
+
             //department-school Foreign
             modelBuilder.Entity<SchoolModel>()//referans alınan model
                 .HasMany(p => p.Departments)  //Hangi modele foregin bağladığımız 
                 .WithOne(s => s.School) //hangi modelden alınacağı
                 .HasForeignKey(k => k.SchoolId);// foreign olan sütun
-
+           
             //teacher-department Foreign
             modelBuilder.Entity<DepartmentModel>()
                 .HasMany(p => p.Teachers)
@@ -186,6 +188,23 @@ namespace Data
                 .WithOne(s => s.Student)
                 .HasForeignKey(k => k.StudentId);
 
+            modelBuilder.Entity<SchoolModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<DepartmentModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<TeacherModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<ClassModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<StudentModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<LessonModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<SubjectModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<QuestionModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<QuestionAnswerModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<TestModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<StudentAnswerModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<QuestionTypeModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<ExamModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<BranchModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<ExamToStudentModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<PositionModel>().Property(c => c.Status).HasConversion<short>();
+            modelBuilder.Entity<AdminModel>().Property(c => c.Status).HasConversion<short>();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

@@ -9,5 +9,6 @@ namespace Core.Interfaces
     {
         [Key]
         int Id { get; set; }
+        bool Status { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class Initial : Migration
+    public partial class MasterContextEdit : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,6 +13,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     BranchName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -26,6 +27,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     LessonName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -39,6 +41,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     PositionName = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -52,6 +55,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     QuestionTypeText = table.Column<string>(nullable: false),
                     QuestionTypeDescription = table.Column<string>(nullable: false)
                 },
@@ -66,6 +70,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     SchoolName = table.Column<string>(nullable: false),
                     SchoolWebSite = table.Column<string>(nullable: true)
                 },
@@ -80,6 +85,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     SubjectName = table.Column<string>(nullable: false),
                     LessonId = table.Column<int>(nullable: false)
                 },
@@ -100,6 +106,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     AdminName = table.Column<string>(nullable: false),
                     AdminMediumName = table.Column<string>(nullable: true),
                     AdminSurname = table.Column<string>(nullable: false),
@@ -124,6 +131,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     ClassName = table.Column<string>(nullable: true),
                     SchoolId = table.Column<int>(nullable: false)
                 },
@@ -144,6 +152,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     DepartmentName = table.Column<string>(nullable: true),
                     SchoolId = table.Column<int>(nullable: false)
                 },
@@ -164,6 +173,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     StudentFirstName = table.Column<string>(nullable: false),
                     StudentMediumName = table.Column<string>(nullable: true),
                     StudentLastName = table.Column<string>(nullable: true),
@@ -189,6 +199,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     TeacherFirstName = table.Column<string>(nullable: false),
                     TeacherMediumName = table.Column<string>(nullable: true),
                     TeacherLastName = table.Column<string>(nullable: false),
@@ -229,6 +240,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     QuestionText = table.Column<string>(nullable: false),
                     QuestionPoint = table.Column<decimal>(nullable: true),
                     QuestionCreateTime = table.Column<DateTime>(nullable: false),
@@ -279,6 +291,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     QuestionId = table.Column<int>(nullable: false),
                     QuestionAnswerText = table.Column<string>(nullable: false),
                     QuestionAnswerType = table.Column<short>(nullable: false)
@@ -300,6 +313,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     TestTime = table.Column<string>(nullable: true),
                     TestCreateTime = table.Column<DateTime>(nullable: false),
                     LessonId = table.Column<int>(nullable: false),
@@ -335,6 +349,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     ExamStatus = table.Column<string>(nullable: true),
                     ExamCreateTime = table.Column<DateTime>(nullable: false),
                     TeacherId = table.Column<int>(nullable: false),
@@ -363,6 +378,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     StudentAnswerText = table.Column<string>(nullable: true),
                     StudentAnswerStatus = table.Column<short>(nullable: false),
                     TestId = table.Column<int>(nullable: false),
@@ -398,6 +414,7 @@ namespace Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
                     StudentId = table.Column<int>(nullable: false),
                     ExamId = table.Column<int>(nullable: false)
                 },

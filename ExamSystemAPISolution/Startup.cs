@@ -27,7 +27,8 @@ namespace ExamSystemAPISolution
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<MasterContext>(x=>x.UseMySQL(Environment.GetEnvironmentVariable("MYSQL_URI")));
+            services.AddDbContext<MasterContext>(x => x.UseMySQL(Environment.GetEnvironmentVariable("MYSQL_URI")));
+            services.AddCors(policy => policy.AddDefaultPolicy(builder => builder.WithOrigins("http://localhost:8080-85").AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials()));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -44,6 +45,7 @@ namespace ExamSystemAPISolution
             }
 
             app.UseHttpsRedirection();
+            app.UseCors();
             app.UseMvc();
         }
     }
