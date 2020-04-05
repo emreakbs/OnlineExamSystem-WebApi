@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(MasterContext))]
-    [Migration("20200305152337_MasterContextEdit")]
-    partial class MasterContextEdit
+    [Migration("20200325190032_İnitial")]
+    partial class İnitial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -37,13 +37,11 @@ namespace Data.Migrations
                     b.Property<string>("AdminSurname")
                         .IsRequired();
 
-                    b.Property<int>("PositionId");
-
                     b.Property<short>("Status");
 
-                    b.HasKey("Id");
+                    b.Property<int>("UserLevel");
 
-                    b.HasIndex("PositionId");
+                    b.HasKey("Id");
 
                     b.ToTable("Admins");
                 });
@@ -267,20 +265,6 @@ namespace Data.Migrations
                     b.ToTable("Lessons");
                 });
 
-            modelBuilder.Entity("Data.Model.PositionModel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<string>("PositionName");
-
-                    b.Property<short>("Status");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Positions");
-                });
-
             modelBuilder.Entity("Data.Model.SchoolModels.SchoolModel", b =>
                 {
                     b.Property<int>("Id")
@@ -378,8 +362,6 @@ namespace Data.Migrations
 
                     b.Property<int>("DepartmentId");
 
-                    b.Property<int>("PositionId");
-
                     b.Property<short>("Status");
 
                     b.Property<string>("TeacherFirstName")
@@ -401,23 +383,15 @@ namespace Data.Migrations
                     b.Property<string>("TeacherUserName")
                         .IsRequired();
 
+                    b.Property<int>("UserLevel");
+
                     b.HasKey("Id");
 
                     b.HasIndex("BranchId");
 
                     b.HasIndex("DepartmentId");
 
-                    b.HasIndex("PositionId");
-
                     b.ToTable("Teachers");
-                });
-
-            modelBuilder.Entity("Data.Model.AdminModels.AdminModel", b =>
-                {
-                    b.HasOne("Data.Model.PositionModel", "Position")
-                        .WithMany("Admins")
-                        .HasForeignKey("PositionId")
-                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Data.Model.ClassModel", b =>
@@ -560,11 +534,6 @@ namespace Data.Migrations
                     b.HasOne("Data.Model.DepartmentModel", "Department")
                         .WithMany("Teachers")
                         .HasForeignKey("DepartmentId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.HasOne("Data.Model.PositionModel", "Position")
-                        .WithMany("Teachers")
-                        .HasForeignKey("PositionId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

@@ -3,10 +3,29 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Data.Migrations
 {
-    public partial class MasterContextEdit : Migration
+    public partial class İnitial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Admins",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("MySQL:AutoIncrement", true),
+                    Status = table.Column<short>(nullable: false),
+                    AdminName = table.Column<string>(nullable: false),
+                    AdminMediumName = table.Column<string>(nullable: true),
+                    AdminSurname = table.Column<string>(nullable: false),
+                    AdminEMail = table.Column<string>(nullable: false),
+                    AdminPassword = table.Column<string>(nullable: false),
+                    UserLevel = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Admins", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Branchs",
                 columns: table => new
@@ -33,20 +52,6 @@ namespace Data.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Lessons", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Positions",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySQL:AutoIncrement", true),
-                    Status = table.Column<short>(nullable: false),
-                    PositionName = table.Column<string>(nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Positions", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -96,31 +101,6 @@ namespace Data.Migrations
                         name: "FK_Subjects_Lessons_LessonId",
                         column: x => x.LessonId,
                         principalTable: "Lessons",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Admins",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("MySQL:AutoIncrement", true),
-                    Status = table.Column<short>(nullable: false),
-                    AdminName = table.Column<string>(nullable: false),
-                    AdminMediumName = table.Column<string>(nullable: true),
-                    AdminSurname = table.Column<string>(nullable: false),
-                    AdminEMail = table.Column<string>(nullable: false),
-                    AdminPassword = table.Column<string>(nullable: false),
-                    PositionId = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Admins", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Admins_Positions_PositionId",
-                        column: x => x.PositionId,
-                        principalTable: "Positions",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -207,7 +187,7 @@ namespace Data.Migrations
                     TeacherUserName = table.Column<string>(nullable: false),
                     TeacherPassword = table.Column<string>(nullable: false),
                     TeacherStatus = table.Column<short>(nullable: false),
-                    PositionId = table.Column<int>(nullable: false),
+                    UserLevel = table.Column<int>(nullable: false),
                     BranchId = table.Column<int>(nullable: false),
                     DepartmentId = table.Column<int>(nullable: false)
                 },
@@ -224,12 +204,6 @@ namespace Data.Migrations
                         name: "FK_Teachers_Departments_DepartmentId",
                         column: x => x.DepartmentId,
                         principalTable: "Departments",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Teachers_Positions_PositionId",
-                        column: x => x.PositionId,
-                        principalTable: "Positions",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -436,11 +410,6 @@ namespace Data.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Admins_PositionId",
-                table: "Admins",
-                column: "PositionId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Classes_SchoolId",
                 table: "Classes",
                 column: "SchoolId");
@@ -536,11 +505,6 @@ namespace Data.Migrations
                 column: "DepartmentId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Teachers_PositionId",
-                table: "Teachers",
-                column: "PositionId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Tests_LessonId",
                 table: "Tests",
                 column: "LessonId");
@@ -602,9 +566,6 @@ namespace Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "Departments");
-
-            migrationBuilder.DropTable(
-                name: "Positions");
 
             migrationBuilder.DropTable(
                 name: "Schools");

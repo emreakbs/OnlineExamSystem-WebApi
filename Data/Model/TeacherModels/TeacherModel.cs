@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Core.Model;
+using Data.Enums;
 using Data.Model.ExamModels;
 using Newtonsoft.Json;
 
@@ -45,16 +46,12 @@ namespace Data.Model.TeacherModels
         [Required(ErrorMessage = "Şifre alanı zorunludur.")]
         public string TeacherPassword { get; set; }
 
-        /// <summary>
-        /// aktiflik durumu
-        /// </summary>
-        public bool TeacherStatus { get; set; }
-
+ 
         /// <summary>
         /// yetki
         /// </summary>
         [Required(ErrorMessage = "Yetki alanı zorunludur.")]
-        public int PositionId { get; set; } 
+        public UserLevel UserLevel { get; set; } 
 
         /// <summary>
         /// Uzmanlık alanı - Dal
@@ -72,9 +69,6 @@ namespace Data.Model.TeacherModels
         public DepartmentModel Department { get; set; }
 
         public BranchModel Branch { get; set; }
-
-        public PositionModel Position { get; set; }
-        
 
        [JsonIgnore] public virtual ICollection<QuestionModel> Questions { get; set; }
        [JsonIgnore] public virtual ICollection<TestModel> Tests { get; set; }

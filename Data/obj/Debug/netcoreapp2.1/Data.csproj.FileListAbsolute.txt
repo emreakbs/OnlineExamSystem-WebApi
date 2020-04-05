@@ -31,3 +31,14 @@ C:\Users\PC\Desktop\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.As
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.csproj.CopyComplete
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.dll
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\bin\Debug\netcoreapp2.1\Data.deps.json
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\bin\Debug\netcoreapp2.1\Data.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\bin\Debug\netcoreapp2.1\Data.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\bin\Debug\netcoreapp2.1\Core.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\bin\Debug\netcoreapp2.1\Core.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.AssemblyInfo.cs
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.csproj.CopyComplete
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Data\obj\Debug\netcoreapp2.1\Data.pdb

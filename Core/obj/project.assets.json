@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\OnlineExamSystem-WebApi\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Bitirme Projesi\\OnlineExamSystem-WebApi\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\PC\\Desktop\\OnlineExamSystem-WebApi\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Bitirme Projesi\\OnlineExamSystem-WebApi\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\OnlineExamSystem-WebApi\\Core\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Bitirme Projesi\\OnlineExamSystem-WebApi\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

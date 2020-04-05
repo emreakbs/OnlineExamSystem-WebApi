@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Core.Model;
+using Data.Enums;
 using Data.Model.ExamModels;
 using Newtonsoft.Json;
 

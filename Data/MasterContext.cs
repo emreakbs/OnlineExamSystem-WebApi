@@ -6,6 +6,7 @@ using Data.Model.SchoolModels;
 using Data.Model.StudentModels;
 using Data.Model.TeacherModels;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Ubiety.Dns.Core;
 
 namespace Data
@@ -35,14 +36,12 @@ namespace Data
         public DbSet<ExamModel> Exams { set; get; }
         public DbSet<BranchModel> Branchs { get; set; }
         public DbSet<ExamToStudentModel> ExamToStudent { get; set; }
-        public DbSet<PositionModel> Positions { get; set; }
         public DbSet<AdminModel> Admins { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             
-
             //department-school Foreign
             modelBuilder.Entity<SchoolModel>()//referans alınan model
                 .HasMany(p => p.Departments)  //Hangi modele foregin bağladığımız 
@@ -164,18 +163,6 @@ namespace Data
                 .WithOne(s => s.Branch)
                 .HasForeignKey(k => k.BranchId);
 
-            //Teacher Position Foreign
-            modelBuilder.Entity<PositionModel>()
-                .HasMany(p => p.Teachers)
-                .WithOne(s => s.Position)
-                .HasForeignKey(k => k.PositionId);
-
-            //Admin Position Foreign
-            modelBuilder.Entity<PositionModel>()
-                .HasMany(p => p.Admins)
-                .WithOne(s => s.Position)
-                .HasForeignKey(k => k.PositionId);
-
             //ExamToStudent Exam Foreign
             modelBuilder.Entity<ExamModel>()
                 .HasMany(p => p.ExamToStudents)
@@ -203,7 +190,6 @@ namespace Data
             modelBuilder.Entity<ExamModel>().Property(c => c.Status).HasConversion<short>();
             modelBuilder.Entity<BranchModel>().Property(c => c.Status).HasConversion<short>();
             modelBuilder.Entity<ExamToStudentModel>().Property(c => c.Status).HasConversion<short>();
-            modelBuilder.Entity<PositionModel>().Property(c => c.Status).HasConversion<short>();
             modelBuilder.Entity<AdminModel>().Property(c => c.Status).HasConversion<short>();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

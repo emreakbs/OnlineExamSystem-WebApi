@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Core.Model;
+using Data.Enums;
 
 namespace Data.Model.AdminModels
 {
@@ -23,8 +24,7 @@ namespace Data.Model.AdminModels
         public string AdminPassword { get; set; }
 
         [Required(ErrorMessage = "Yetki alanı zorunludur.")]
-        public int PositionId { get; set; }
+        public UserLevel UserLevel { get; set; }
 
-        public PositionModel Position { get; set; }
     }
 }

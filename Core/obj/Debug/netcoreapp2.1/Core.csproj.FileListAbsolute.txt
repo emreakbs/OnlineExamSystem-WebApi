@@ -20,3 +20,11 @@ C:\Users\PC\Desktop\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.As
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.AssemblyInfo.cs
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.dll
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Core\bin\Debug\netcoreapp2.1\Core.deps.json
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Core\bin\Debug\netcoreapp2.1\Core.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Core\bin\Debug\netcoreapp2.1\Core.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.AssemblyInfo.cs
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\Core\obj\Debug\netcoreapp2.1\Core.csprojAssemblyReference.cache

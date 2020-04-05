@@ -5629,11 +5629,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\OnlineExamSystem-WebApi\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Bitirme Projesi\\OnlineExamSystem-WebApi\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "C:\\Users\\PC\\Desktop\\OnlineExamSystem-WebApi\\DataAccess\\DataAccess.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Bitirme Projesi\\OnlineExamSystem-WebApi\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\OnlineExamSystem-WebApi\\DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Bitirme Projesi\\OnlineExamSystem-WebApi\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5649,8 +5649,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\OnlineExamSystem-WebApi\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\OnlineExamSystem-WebApi\\Data\\Data.csproj"
+            "C:\\Users\\PC\\Desktop\\Bitirme Projesi\\OnlineExamSystem-WebApi\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\Bitirme Projesi\\OnlineExamSystem-WebApi\\Data\\Data.csproj"
             }
           }
         }

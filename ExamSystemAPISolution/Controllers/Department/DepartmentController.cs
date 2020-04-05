@@ -2,40 +2,40 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Data.Model.SchoolModels;
+using Data.Model;
 using DataAccess.UnitOfWork;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace ExamSystemAPISolution.Controllers.School
+namespace ExamSystemAPISolution.Controllers.Department
 {
-    [Route("School/[controller]")]
+    [Route("Department/[controller]")]
     [ApiController]
-    public class SchoolController : ControllerBase
+    public class DepartmentController : Controller
     {
-        #region AddSchool
+        #region AddDepartment
         /// <summary>
-        /// Okul eklemeye yarayan metod
+        /// Departman eklemeye yarayan metod
         /// </summary>
-        /// <param name="school"></param>
+        /// <param name="department"></param>
         /// <returns></returns>
-        [HttpPost("AddSchool")]
-        public IActionResult AddSchool(SchoolModel school)
+        [HttpPost("AddDepartment")]
+        public IActionResult AddDepartment(DepartmentModel department)
         {
             try
             {
                 if (!ModelState.IsValid) return (BadRequest("İstek geçerli değil."));
                 using (UnitOfWork uow = new UnitOfWork())
                 {
-                    var control = uow.GetRepository<SchoolModel>().Get(x => x.SchoolName.Equals(school.SchoolName));
+                    var control = uow.GetRepository<DepartmentModel>().Get(x => x.DepartmentName.Equals(department.DepartmentName) && x.SchoolId.Equals(department.SchoolId));
 
                     switch (control)
                     {
                         case null:
-                            uow.GetRepository<SchoolModel>().Add(school);
-                            return uow.SaveChanges() > 0 ? Ok(school) : StatusCode(424, "Beklenmeyen hata gerçekleşti.");
+                            uow.GetRepository<DepartmentModel>().Add(department);
+                            return uow.SaveChanges() > 0 ? Ok(department) : StatusCode(424, "Beklenmeyen hata gerçekleşti.");
                         default:
-                            return Conflict("Okul adı daha önceden bulunmaktadır.");
+                            return Conflict("Departman daha önceden bulunmaktadır.");
                     }
                 }
             }
@@ -46,14 +46,13 @@ namespace ExamSystemAPISolution.Controllers.School
         }
         #endregion
 
-        #region SchoolList
+        #region DepartmentList
         /// <summary>
-        /// Okulları Listeleyen metod
+        /// Departmanları Listeleyen metod
         /// </summary>
-        /// <param name="id">eğer 0 gönderilirse tümünü, 0 dan farklı gönderilirse tekli döndürür</param>
         /// <returns></returns>
-        [HttpGet("SchoolList/{id}")]
-        public IActionResult SchoolList(int id)
+        [HttpGet("DepartmentList")]
+        public IActionResult DepartmentList()
         {
             try
             {
@@ -61,8 +60,8 @@ namespace ExamSystemAPISolution.Controllers.School
 
                 using (UnitOfWork uow = new UnitOfWork())
                 {
-                    var schoolModel = uow.GetRepository<SchoolModel>();
-                    return id == 0 ? Ok(schoolModel.GetAll().ToList()) : Ok(schoolModel.Get(x => x.Id.Equals(id)));
+                    var departmentModel = uow.GetRepository<DepartmentModel>();
+                   return Ok(departmentModel.GetAll().Include(x=>x.School).ToList());
                 }
             }
             catch (Exception e)
@@ -74,20 +73,20 @@ namespace ExamSystemAPISolution.Controllers.School
 
         #endregion
 
-        #region Remove School
-        [HttpDelete("RemoveSchool/{id}")]
-        public IActionResult RemoveSchool(int id)
+        #region Remove Department
+        [HttpDelete("RemoveDepartment/{id}")]
+        public IActionResult RemoveDepartment(int id)
         {
             try
             {
                 using (UnitOfWork uow = new UnitOfWork())
                 {
-                    var schoolModel = uow.GetRepository<SchoolModel>();
+                    var departmentModel = uow.GetRepository<DepartmentModel>();
 
-                    schoolModel.Delete(schoolModel.Get(x => x.Id.Equals(id)));
+                    departmentModel.Delete(departmentModel.Get(x => x.Id.Equals(id)));
 
                     return uow.SaveChanges() > 0
-                        ? Ok("Okul başarı ile silindi.")
+                        ? Ok("Depatmant başarı ile silindi.")
                         : StatusCode(424, "Beklenmeyen bir hata gerçekleşti.");
                 }
 
@@ -101,21 +100,21 @@ namespace ExamSystemAPISolution.Controllers.School
 
         #endregion
 
-        #region Edit School
-        [HttpPut("EditSchool")]
-        public IActionResult EditSchool(SchoolModel school)
+        #region Edit Department
+        [HttpPut("EditDepartment")]
+        public IActionResult EditDepartment(DepartmentModel department)
         {
             try
             {
                 if (!ModelState.IsValid) return BadRequest("İstek geçerli değil.");
                 using (UnitOfWork uow = new UnitOfWork())
                 {
-                    var schoolModel = uow.GetRepository<SchoolModel>();
-                    var schoolControl = schoolModel.GetAll(x => x.Id.Equals(school.Id));
+                    var departmentModel = uow.GetRepository<DepartmentModel>();
+                    var departmentControl = departmentModel.GetAll(x => x.Id.Equals(department.Id));
 
-                    if (schoolControl != null) uow.GetRepository<SchoolModel>().Update(school);
+                    if (departmentControl != null) uow.GetRepository<DepartmentModel>().Update(department);
 
-                    return uow.SaveChanges() > 0 ? Ok(school) : StatusCode(424, "Beklenmeyen bir hata oluştu.");
+                    return uow.SaveChanges() > 0 ? Ok(department) : StatusCode(424, "Beklenmeyen bir hata oluştu.");
                 }
             }
             catch (Exception e)
@@ -126,6 +125,5 @@ namespace ExamSystemAPISolution.Controllers.School
         }
 
         #endregion
-
     }
 }

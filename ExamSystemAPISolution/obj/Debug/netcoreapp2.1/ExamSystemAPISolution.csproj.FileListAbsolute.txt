@@ -67,3 +67,26 @@ C:\Users\PC\Desktop\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netc
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.csproj.CopyComplete
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.dll
 C:\Users\PC\Desktop\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\ExamSystemAPISolution.deps.json
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\ExamSystemAPISolution.runtimeconfig.json
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\ExamSystemAPISolution.runtimeconfig.dev.json
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\ExamSystemAPISolution.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\ExamSystemAPISolution.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\Core.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\Data.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\DataAccess.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\DataAccess.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\Data.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\bin\Debug\netcoreapp2.1\Core.pdb
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.RazorAssemblyInfo.cache
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.RazorAssemblyInfo.cs
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.AssemblyInfo.cs
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.RazorTargetAssemblyInfo.cache
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.csproj.CopyComplete
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.dll
+C:\Users\PC\Desktop\Bitirme Projesi\OnlineExamSystem-WebApi\ExamSystemAPISolution\obj\Debug\netcoreapp2.1\ExamSystemAPISolution.pdb
